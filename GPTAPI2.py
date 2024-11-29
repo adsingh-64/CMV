@@ -62,7 +62,6 @@ for i in range(len(sampled_prompts)):
             ],
         )
         response = completion.choices[0].message.content.strip()
-        print(response)
 
         completion_2 = client.chat.completions.create(
             model="gpt-4o-mini",
@@ -74,7 +73,6 @@ for i in range(len(sampled_prompts)):
             ],
         )
         response_2 = completion_2.choices[0].message.content.strip()
-        print(response_2)
 
         if "$$answer: first response$$" in response_2.lower():
             pred_label = "a"
@@ -162,4 +160,13 @@ Second Response:
 Results:
 --------------------------------------------------------------------------------
 Valid predictions is 500/500, and accuracy is 57.80%
+
+Prompt:
+--------------------------------------------------------------------------------
+two prompt scheme
+
+Results:
+--------------------------------------------------------------------------------
+Valid predictions: 500
+Accuracy: 53.80%
 """

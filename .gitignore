@@ -1,6 +1,5 @@
 tutorial.ipynb
 playground.ipynb
-*.jsonl
 *.bz2
 .env
 **/__pycache__/

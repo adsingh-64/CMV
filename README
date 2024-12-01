@@ -1,4 +1,4 @@
-Trial project on Winning Arguments (Tan et al 2016) that replicates pair prediction task using the GPT-4o API.
+Trial project on Winning Arguments (Tan et al 2016) that replicates the pair prediction task using the GPT-4o-mini API.
 
 Original paper and data:
 @inproceedings{tan+etal:16a, 
@@ -8,11 +8,15 @@ Original paper and data:
     booktitle = {Proceedings of WWW} 
 }
 
-Winning_Arguments.pdf is the write-up of the experiment.
+## Files and Directories
 
-GPTAPI.py can run the "basic" and "explain-then-predict" set-ups (see pdf), and GPTAPI2.py runs the "explain-then-predit-2" set-up.
+### Experiment write-up
+- `Winning_Arguments.pdf`: Detailed write-up of the experiment.
 
-Model responses from 500 "explain-then-predict" runs are stored in explain_then_predict_together.jsonl,
-and model responses from 500 "explain-then-predict-2" runs are stored in explain_then_predict_separate.jsonl.
+### Scripts
+- `scripts/GPTAPI.py`: Runs the "basic" and "explain-then-predict" setups (see PDF for details).
+- `scripts/GPTAPI2.py`: Runs the "explain-then-predict-2" setup.
 
-
+### Model Responses
+- `output_data/explain_then_predict_together.jsonl`: Responses from 500 runs of the "explain-then-predict" setup.
+- `output_data/explain_then_predict_separate.jsonl`: Responses from 500 runs of the "explain-then-predict-2" setup.

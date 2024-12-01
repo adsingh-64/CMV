@@ -1,6 +1,5 @@
 tutorial.ipynb
 playground.ipynb
-*.bz2
 .env
 **/__pycache__/
 *.pyc

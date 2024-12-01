@@ -44,7 +44,7 @@ sampled_prompts, sampled_labels = get_sample(prompts, labels, n_samples=500)
 correct = 0
 total = 0
 
-output_file = "explain_then_predict_separate.jsonl"
+output_file = "output_data/explain_then_predict_separate.jsonl"
 system_prompt = prompt_options["explain"]
 
 with open(output_file, "a") as f:

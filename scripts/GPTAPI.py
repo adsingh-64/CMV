@@ -47,8 +47,8 @@ sampled_prompts, sampled_labels = get_sample(prompts, labels, n_samples=500)
 correct = 0
 total = 0
 
-output_file = "explain_then_predict_together.jsonl"
-system_prompt = prompt_options["basic"]
+output_file = "output_data/explain_then_predict_together.jsonl"
+system_prompt = prompt_options["explain_then_predict"]
 
 with open(output_file, "a") as f:
     for i in range(len(sampled_prompts)):
